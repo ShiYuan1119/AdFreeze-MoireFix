@@ -163,7 +163,7 @@ def fix_image(image_path):
 
     st.sidebar.success(f"Processing time: {processing_time:.2f} seconds")
 
-my_upload = st.sidebar.file_uploader("## Upload an image", type=["png", "jpg", "jpeg"])
+my_upload = st.sidebar.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
 
 if my_upload is None:
     col1.write("Original Image :camera:")
