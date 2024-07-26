@@ -4,7 +4,6 @@ import mediapipe as mp
 import numpy as np
 from PIL import Image
 import requests
-import json
 from threading import Thread
 
 # HandDetector class definition
