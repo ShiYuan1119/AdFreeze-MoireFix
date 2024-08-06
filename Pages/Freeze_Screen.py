@@ -63,11 +63,33 @@ chosen_tab = hc.option_bar(
     horizontal_orientation=True,
 )
 
-st.success("Welcome to AdFreeze & MoiréFix! "
-           "In this interface, you will learn how to freeze and freeze off LED screen using gestures. "
-           "Please note that there are certain limitations regarding gestures and distance between the device and the screen."
-           "Hoping you have an enjoyable experience 😊")
 
+st.markdown('''
+    <style>
+    .custom-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #3c763d;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        font-size: 1.1em;
+    }
+    @media (max-width: 768px) {
+        .custom-success {
+            font-size: 0.9em;
+            padding: 10px;
+        }
+    }
+    </style>
+    <div class="custom-success">
+        Welcome to AdFreeze & MoiréFix! In this interface, you will learn how to freeze and freeze off LED screen using gestures.
+        Please note that there are certain limitations regarding gestures and distance between the device and the screen.
+        Hoping you have an enjoyable experience 😊
+    </div>
+            
+    ''', unsafe_allow_html=True)
 if chosen_tab == GUIDE:
     Guide_page()
 elif chosen_tab == DETALIS:
