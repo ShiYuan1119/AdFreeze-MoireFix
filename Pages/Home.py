@@ -35,10 +35,45 @@ st.markdown("""
 
 # Centered content
 st.markdown('''
+    <style>
+    .centered {
+        text-align: center;
+        padding: 20px;
+    }
+    .title {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    .image img {
+        max-width: 100%;
+        height: auto;
+    }
+    .subtitle {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+    .description {
+        font-size: 1em;
+        margin-top: 20px;
+        padding: 0 10%;
+    }
+    @media (max-width: 768px) {
+        .title {
+            font-size: 1.5em;
+        }
+        .subtitle {
+            font-size: 1.2em;
+        }
+        .description {
+            font-size: 0.9em;
+            padding: 0 5%;
+        }
+    }
+    </style>
     <div class="centered">
         <div class="title">AdFreeze & MoiréFix</div>
         <div class="image">
-            <img src="https://www.researchgate.net/publication/362871842/figure/fig1/AS:11431281084350163@1663153181104/MediaPipe-Hands-21-landmarks-13.ppm" salt="Example Image" width="300">
+            <img src="https://www.researchgate.net/publication/362871842/figure/fig1/AS:11431281084350163@1663153181104/MediaPipe-Hands-21-landmarks-13.ppm" alt="Example Image" width="300">
         </div>
         <div class="subtitle">Welcome to AdFreeze & MoiréFix! 👋</div>
         <div class="description">
