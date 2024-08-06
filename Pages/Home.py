@@ -59,13 +59,13 @@ st.markdown('''
     }
     @media (max-width: 768px) {
         .title {
-            font-size: 1.5em;
+            font-size: 1.7em;
         }
         .subtitle {
-            font-size: 1.2em;
+            font-size: 1.4em;
         }
         .description {
-            font-size: 0.9em;
+            font-size: 1em;
             padding: 0 5%;
         }
     }
