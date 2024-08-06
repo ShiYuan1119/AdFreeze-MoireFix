@@ -7,7 +7,7 @@ import hydralit_components as hc
 
 st.set_page_config(
     page_title="AdFreeze & MoiréFix",
-    layout="centered",
+    layout="wide",
     page_icon="🪄",
 )
 

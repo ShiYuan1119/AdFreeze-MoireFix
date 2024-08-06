@@ -10,7 +10,6 @@ from Pages.SubPages.FAQ import FAQ_page
 
 
 
-
 # NavBar
 
 GUIDE = 'Guide'
@@ -35,12 +34,34 @@ option_data = [
 over_theme = {'txc_inactive': 'black', 'menu_background': '#D6E5FA', 'txc_active': 'white', 'option_active': '#749BC2'}
 font_fmt = {'font-class': 'h3', 'font-size': '50%'}
 
+st.markdown("""
+    <style>
+    .navbar-container {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .navbar-item {
+        flex: none;
+        margin-right: 15px;
+    }
+    .hc_option_bar {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+st.markdown('<div class="navbar-container">', unsafe_allow_html=True)
+
 chosen_tab = hc.option_bar(
     option_definition=option_data,
     title='',
     key='PrimaryOptionx',
     override_theme=over_theme,
-    horizontal_orientation=True)
+    horizontal_orientation=True,
+)
 
 st.success("Welcome to AdFreeze & MoiréFix! "
            "In this interface, you will learn how to freeze and freeze off LED screen using gestures. "
