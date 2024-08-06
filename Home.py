@@ -11,7 +11,7 @@ st.set_page_config(
 
 Freeze_Screen_page = st.Page(page = "Pages/Freeze_Screen.py", title = "Freeze Screen", icon = "🧊")
 MoiréFix_page = st.Page(page = "Pages/MoiréFix.py", title = "MoiréFix", icon = "🧩")
-Contact_page = st.Page(page = "Pages/Contact US.py", title = "Contact", icon = "💬")
+Contact_page = st.Page(page = "Pages/Contact Us.py", title = "Contact Us", icon = "💬")
 pg = st.navigation([Freeze_Screen_page, MoiréFix_page, Contact_page])
 pg.run()
 
