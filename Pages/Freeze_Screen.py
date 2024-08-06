@@ -13,7 +13,7 @@ from Pages.SubPages.FAQ import FAQ_page
 # NavBar
 
 GUIDE = 'Guide'
-DETALIS = 'Hardware/Software'
+DETALIS = 'HW/SW'
 RESOURCE = 'Resources'
 FAQ = 'FAQ'
 
