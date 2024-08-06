@@ -9,6 +9,12 @@ st.set_page_config(
     page_icon="🪄",
 )
 
+Freeze_Screen_page = st.Page(page = "Pages/Freeze_Screen.py", title = "Freeze Screen", icon = "🧊")
+MoiréFix_page = st.Page(page = "Pages/MoiréFix.py", title = "MoiréFix", icon = "🧩")
+Contact_page = st.Page(page = "Pages/Contact.py", title = "Contact", icon = "💬")
+pg = st.navigation([Freeze_Screen_page, MoiréFix_page, Contact_page])
+pg.run()
+
 # Add custom CSS
 st.markdown("""
     <style>
