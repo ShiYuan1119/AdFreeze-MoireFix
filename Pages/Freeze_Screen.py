@@ -7,11 +7,7 @@ from Pages.SubPages.FAQ import FAQ_page
 
 
 
-st.set_page_config(
-layout="wide",
-page_title="AdFreeze & MoiréFix",
-page_icon="🪄",
-)
+
 
 
 # NavBar

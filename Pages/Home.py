@@ -1,19 +1,5 @@
 import streamlit as st
-from PIL import Image
-import os
 
-# Set page title and icon
-
-st.set_page_config(
-    page_title="AdFreeze & MoiréFix",
-    page_icon="🪄",
-)
-
-Freeze_Screen_page = st.Page(page = "Pages/Freeze_Screen.py", title = "Freeze Screen", icon = "🧊")
-MoiréFix_page = st.Page(page = "Pages/MoiréFix.py", title = "MoiréFix", icon = "🧩")
-Contact_page = st.Page(page = "Pages/Contact Us.py", title = "Contact Us", icon = "💬")
-pg = st.navigation([Freeze_Screen_page, MoiréFix_page, Contact_page])
-pg.run()
 
 # Add custom CSS
 st.markdown("""
@@ -61,8 +47,6 @@ st.markdown('''
     </div>
     ''', unsafe_allow_html=True)
 
-
-
 # Navigation
 st.sidebar.title("Navigation")
 st.sidebar.markdown("[Introduction](#introduction)")
@@ -80,20 +64,3 @@ st.write("To freeze the LED screen, you can use the freeze gesture. The freeze g
 st.markdown("---")
 st.title("MoiréFix")
 st.write("Moiré is a type of interference that occurs when two or more light sources in the same plane produce a pattern that appears to be a single image. Moiré can be caused by a variety of factors, including the lens used to focus the light, the distance between the light sources, and the angle between the light sources. MoiréFix is a solution for removing moiré patterns from your photos. The solution is designed to work with any smartphone or tablet with a camera and LED screen. The solution is easy to use and can be used for both landscape and portrait photography. The solution is powered by MediaPipe, a machine learning framework that provides solutions for computer vision tasks. The solution is open-source and can be modified and customized to suit your needs.")
-
-
-st.sidebar.title("More")
-st.sidebar.markdown(
-    "🪲[Report a bug ](https://github.com/ShiYuan1119/AdFreeze-MoireFix/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=)")
-st.sidebar.markdown(
-    "💡[Features request](https://github.com/ShiYuan1119/AdFreeze-MoireFix/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.md&title=%5BFEATURE%5D)")
-st.sidebar.markdown(
-    "👩‍💻[Need HELP](https://github.com/ShiYuan1119/AdFreeze-MoireFix/issues/new?assignees=&labels=help+wanted&projects=&template=need-help.md&title=%5BHELP%5D)")
-
-
-
-# Page footer
-st.markdown("---")
-st.markdown("© 2024 AdFreeze & MoiréFix. All rights reserved.")
-
-st.write('This is user verison')

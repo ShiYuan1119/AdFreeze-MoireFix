@@ -1,11 +1,7 @@
 import streamlit as st
 import os
 
-# Contact Us
-st.set_page_config(
-    page_title="AdFreeze & MoiréFix",
-    page_icon="🪄",
-)
+
 
 
 st.header("Contact Us")

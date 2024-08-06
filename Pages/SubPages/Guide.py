@@ -64,7 +64,7 @@ def Guide_page():
 
 
     st.markdown('')
-    st.markdown("<h3 style='color:#FFC93C;'>Important Tips</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color:#FFC93C;'>📌Important Tips</h3>", unsafe_allow_html=True)
 
 
 

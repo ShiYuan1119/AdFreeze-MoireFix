@@ -9,8 +9,7 @@ from io import BytesIO
 import math
 import time
 
-# Set the page config
-st.set_page_config(layout="wide", page_title="AdFreeze & MoiréFix", page_icon="🪄")
+
 
 # Add the models folder to the path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'models')))
