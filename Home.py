@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 import os
-imporr 
+
 # Set page title and icon
 
 st.set_page_config(
