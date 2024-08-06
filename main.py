@@ -11,6 +11,23 @@ st.set_page_config(
     page_icon="🪄",
 )
 
+st.markdown('''
+    <style>
+   
+    @media (max-width: 768px) {
+        .title {
+            font-size: 1.5em;
+        }
+        .subtitle {
+            font-size: 1.2em;
+        }
+        .description {
+            font-size: 0.9em;
+            padding: 0 5%;
+        }
+    }
+            ''', unsafe_allow_html=True)
+
 Home_page = st.Page(page = "Pages/Home.py", title = "HOME", icon = "🌏")
 Freeze_Screen_page = st.Page(page = "Pages/Freeze_Screen.py", title = "Freeze Screen", icon = "🧊")
 MoiréFix_page = st.Page(page = "Pages/MoiréFix.py", title = "MoiréFix", icon = "🧩")
