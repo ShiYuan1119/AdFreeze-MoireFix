@@ -1,4 +1,5 @@
 import streamlit as st
+import numpy as np
 import hydralit_components as hc
 from Pages.SubPages.Guide import Guide_page
 from Pages.SubPages.HW_SW import HW_SW

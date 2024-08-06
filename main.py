@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 import os
+import numpy as np
 import hydralit_components as hc
 # Set page title and icon
 
