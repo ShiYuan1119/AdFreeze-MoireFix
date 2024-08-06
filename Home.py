@@ -14,7 +14,7 @@ st.markdown("""
     .centered {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: justifiy;
         align-items: center;
         height: 100vh;
         text-align: center;
@@ -25,7 +25,7 @@ st.markdown("""
     }
     .title {
         font-size: 3em;
-        color: #4682B4;
+        color: #4072B3;
     }
             
     .subtitle {

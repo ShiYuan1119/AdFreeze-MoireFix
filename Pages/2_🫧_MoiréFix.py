@@ -105,7 +105,10 @@ def process_image_bytes(image_bytes):
     
     return fixed_image_bytes
 
-st.title("Clean Your Moire Images!")
+st.markdown(
+        "<h3 style='text-align: center; color: black;font-size: 50px'>Clean Your Moire Images!</h1>",
+        unsafe_allow_html=True)
+#st.title("")
 st.write(
     "🐧Try uploading an image to watch the moire patterns magically removed. \n"
     "Fixed images can be downloaded from the sidebar. \n"
