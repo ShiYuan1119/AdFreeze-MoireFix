@@ -62,10 +62,10 @@ st.markdown('''
             font-size: 1.7em;
         }
         .subtitle {
-            font-size: 1.4em;
+            font-size: 1.3em;
         }
         .description {
-            font-size: 1em;
+            font-size: 1.1em;
             padding: 0 5%;
         }
     }
