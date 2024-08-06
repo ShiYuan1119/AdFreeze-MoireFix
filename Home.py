@@ -1,7 +1,6 @@
 import streamlit as st
 from PIL import Image
 import os
-from Pages import freeze_screen, moire_fix
 
 # Set page title and icon
 
