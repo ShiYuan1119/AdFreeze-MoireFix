@@ -174,7 +174,7 @@ def main():
     stframe = None    
     
     if enable_freeze == "Enable":
-        cap = cv2.VideoCapture(0)
+        cap = cv2.VideoCapture(1)
         detector = HandDetector()
         stframe = st.empty()
 
