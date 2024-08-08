@@ -44,12 +44,7 @@ def img_pad(x, w_pad, h_pad, w_odd_pad, h_odd_pad):
     return torch.cat([x1, x2, x3], dim=1)
 
 def preprocess_image(img):
-    # 在 transforms 列表中添加调整图像大小的步骤
-    t_list = [
-        transforms.Resize((224, 224)),  # 调整图像大小
-        transforms.ToTensor(),
-        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])  # 添加归一化步骤
-    ]
+    t_list = [transforms.ToTensor()]
     composed_transform = transforms.Compose(t_list)
     return composed_transform(img)
 
