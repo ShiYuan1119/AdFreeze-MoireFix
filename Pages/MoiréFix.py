@@ -30,7 +30,7 @@ def load_model():
     ).to(device)
 
     load_path = "./models/mix.pth"
-    model_state_dict = torch.load(load_path, map_location=device)
+    model_state_dict = torch.load(load_path, map_location=device, weights_only=True)
     model.load_state_dict(model_state_dict)
     model.eval()
     return model
